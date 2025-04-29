@@ -1,0 +1,76 @@
+:root {
+
+    --corPrincipal: #3C82C0;
+    --corBranco: #FFFFFF;
+    --corAzulClaro: #96BBDC;
+    --corCinzaEscuro: #5E5E5E;
+    --corPreto: #000000;
+    --corPagina: #bebebe;
+
+    --fontePadrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonteDestaque:
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--corAzulClaro);
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+.form-side {
+    width: 35vw;
+    height: 70vh;
+    background-color: var(--corBranco);
+    border-radius: 0px 20px 20px 0px;
+    box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.image-side {
+
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;   
+    width: 25vw;
+    height: 70vh;
+    background-color: #3C82C0;
+    border-radius: 20px 0px 0px 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}    
+
+.owl {
+    width: 25%;
+    margin-bottom: 4%;
+}
+
+.skoob-name {
+    width: 45%;
+}
+
+.phrase {
+    font-size: 0.9rem;
+    color: var(--corBranco);
+    text-align: center;
+    margin-top: 4%;
+    padding: 10% 10% 3% 10%;
+}
+
+.author {
+    font-size: 0.8rem;
+    color: var(--corBranco);
+    text-align: left;
+
+}
