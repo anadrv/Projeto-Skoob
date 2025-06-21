@@ -1,3 +1,12 @@
+//DESAFIO JSON
+
+const submit_btn = document.getElementById("submit");
+
+
+
+
+
+//FRASES
 const frases = [
     {
       texto: "Sempre imaginei que o paraíso fosse uma espécie de biblioteca.",

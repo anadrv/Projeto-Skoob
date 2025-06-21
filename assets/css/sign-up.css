@@ -1,0 +1,165 @@
+:root {
+  --cor-principal: #3c82c0;
+  --cor-branco: #ffffff;
+  --cor-azul-claro: #96bbdc;
+  --cor-cinza-escuro: #5e5e5e;
+  --cor-preto: #000000;
+  --cor-pagina: #f2f2f2;
+
+  --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+  --fonte-destaque: "Montserrat", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--fonte-padrao);
+}
+
+body {
+  background-color: var(--cor-azul-claro);
+}
+
+/*BLOCO LOGIN*/
+
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/*LADO DA IMAGEM*/
+
+.login__image-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 25vw;
+  height: 70vh;
+  background-color: var(--cor-principal);
+  border-radius: 20px 0 0 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login__owl {
+  width: 25%;
+  margin-bottom: 4%;
+}
+
+.login__logo {
+  width: 45%;
+}
+
+.login__phrase {
+  font-size: 0.9rem;
+  color: var(--cor-branco);
+  text-align: justify;
+  padding: 10% 10% 3% 10%;
+}
+
+.login__author {
+  font-size: 0.8rem;
+  color: var(--cor-branco);
+  text-align: left;
+}
+
+/*LADO DO FORMULÁRIO*/
+
+.login__form-side {
+  width: 35vw;
+  height: 70vh;
+  background-color: var(--cor-branco);
+  border-radius: 0 20px 20px 0;
+  box-shadow: 5px 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 7%;
+  align-items: start;
+  color: var(--cor-cinza-escuro);
+}
+
+.form {
+  width: 100%;
+}
+
+.form__title h1 {
+  font-size: 1.6rem;
+}
+
+
+.form__group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__input {
+  padding: 7px 4px;
+  background-color: var(--cor-pagina);
+  border: 1px solid #c6c6c6;
+  border-radius: 4px;
+}
+
+.form__label {
+  margin-top: 20px;
+}
+
+
+.form__link-password {
+    text-decoration: none;
+    color: var(--cor-cinza-escuro);
+}
+
+.form__link-password:hover {
+    color: #000000;
+}
+
+.form__button {
+    margin: 20px 0;
+    width: 100%;
+    padding: 9px 0;
+    background-color: var(--cor-preto);
+    color: var(--cor-branco);
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+.form__button:hover {
+    background-color: #255580;
+
+}
+
+.form__register {
+    margin: -10px 0;
+    display: flex;
+    font-size: 0.9rem;
+    gap: 10px;
+
+}
+
+.form__register a{
+    text-decoration: none;
+    color: var(--cor-principal);
+    font-weight: bold;
+    transition: color 0.5s ease;
+}
+
+.form__register a:hover{
+    color: #255580;
+}
+
+@media (max-width: 800px) {
+    .login__form-side {
+
+  padding: 0 4%;
+  align-items: start;
+  gap: 60px;
+  color: var(--cor-cinza-escuro);
+}
+}

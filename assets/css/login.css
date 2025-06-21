@@ -80,7 +80,7 @@ body {
   justify-content: center;
   padding: 0 7%;
   align-items: start;
-  gap: 60px;
+  gap: 40px;
   color: var(--cor-cinza-escuro);
 }
 
@@ -90,7 +90,7 @@ body {
 
 .form__title h1 {
   color: var(--cor-principal);
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 
 }
 

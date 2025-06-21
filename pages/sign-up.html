@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skoob - Cadastro</title>
+    <link rel="stylesheet" href="/assets/css/sign-up.css" />
+    <link
+      rel="shortcut icon"
+      href="/assets/images/coruja_skoob_fundo_azul_circular.gif"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <main>
+      <section class="login">
+        <div class="login__image-side">
+          <img
+            class="login__owl"
+            src="/assets/images/coruja_branca_skoob_fundo_transparente.png"
+            alt="Coruja do Skoob"
+          />
+          <img
+            class="login__logo"
+            src="/assets/images/skoob_sem_fundo.png"
+            alt="Logo Skoob"
+          />
+          <p class="login__phrase">
+            “O Skoob é a maior e mais completa rede social para leitores do
+            Brasil, o lugar perfeito para conhecer novos livros, fazer amizades
+            e compartilhar o seu amor pela leitura.”
+          </p>
+        </div>
+
+        <div class="login__form-side">
+          <div class="form__title">
+            <h1>Cadastro</h1>
+          </div>
+
+          <form action="#" method="post" class="form">
+            <div class="form__group">
+
+              <label for="name" class="form__label">Nome:</label>
+              <input type="text" name="name" id="name" class="form__input" />
+
+              <label for="email" class="form__label">Seu melhor e-mail:</label>
+              <input type="email" name="email" id="email" class="form__input" />
+
+              <label for="password" class="form__label">Senha:</label>
+              <input type="password"name="password" id="password" class="form__input"/>
+
+              <label for="password" class="form__label">Digite a senha novamente:</label>
+              <input type="password"name="password" id="password" class="form__input"/>
+
+            </div>
+
+            <button type="submit" class="form__button" id="submit">
+              Confirmar cadastro
+            </button>
+
+            <p class="form__register">
+              Já tem uma conta?<a href="/pages/login.html" class="form__link-sign"
+                >Fazer Login</a
+              >
+            </p>
+          </form>
+        </div>
+      </section>
+    </main>
+    <script src="/assets/js/script.js"></script>
+  </body>
+</html>
