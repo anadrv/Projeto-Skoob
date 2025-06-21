@@ -1,76 +1,127 @@
 :root {
+  --cor-principal: #3c82c0;
+  --cor-branco: #ffffff;
+  --cor-azul-claro: #96bbdc;
+  --cor-cinza-escuro: #5e5e5e;
+  --cor-preto: #000000;
+  --cor-pagina: #f2f2f2;
 
-    --corPrincipal: #3C82C0;
-    --corBranco: #FFFFFF;
-    --corAzulClaro: #96BBDC;
-    --corCinzaEscuro: #5E5E5E;
-    --corPreto: #000000;
-    --corPagina: #bebebe;
-
-    --fontePadrao: Arial, Verdana, Helvetica, sans-serif;
-    --fonteDestaque:
+  --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+  --fonte-destaque: "Montserrat", sans-serif;
 }
 
 * {
-    margin: 0px;
-    padding: 0px;
-    font-family: Arial, Helvetica, sans-serif;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--fonte-padrao);
 }
 
 body {
-    background-color: var(--corAzulClaro);
+  background-color: var(--cor-azul-claro);
 }
 
-.login-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    
+/*BLOCO LOGIN*/
+
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-.form-side {
-    width: 35vw;
-    height: 70vh;
-    background-color: var(--corBranco);
-    border-radius: 0px 20px 20px 0px;
-    box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.1);
+/*LADO DA IMAGEM*/
+
+.login__image-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 25vw;
+  height: 70vh;
+  background-color: var(--cor-principal);
+  border-radius: 20px 0 0 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.image-side {
-
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    flex-direction: column;   
-    width: 25vw;
-    height: 70vh;
-    background-color: #3C82C0;
-    border-radius: 20px 0px 0px 20px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-}    
-
-.owl {
-    width: 25%;
-    margin-bottom: 4%;
+.login__owl {
+  width: 25%;
+  margin-bottom: 4%;
 }
 
-.skoob-name {
-    width: 45%;
+.login__logo {
+  width: 45%;
 }
 
-.phrase {
-    font-size: 0.9rem;
-    color: var(--corBranco);
-    text-align: center;
-    margin-top: 4%;
-    padding: 10% 10% 3% 10%;
+.login__phrase {
+  font-size: 0.9rem;
+  color: var(--cor-branco);
+  text-align: center;
+  margin-top: 4%;
+  padding: 10% 10% 3% 10%;
 }
 
-.author {
-    font-size: 0.8rem;
-    color: var(--corBranco);
-    text-align: left;
+.login__author {
+  font-size: 0.8rem;
+  color: var(--cor-branco);
+  text-align: left;
+}
 
+/*LADO DO FORMULÁRIO*/
+
+.login__form-side {
+  width: 35vw;
+  height: 70vh;
+  background-color: var(--cor-branco);
+  border-radius: 0 20px 20px 0;
+  box-shadow: 5px 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 150px 0 80px;
+  align-items: start;
+  gap: 60px;
+  color: var(--cor-cinza-escuro);
+}
+
+.form {
+  width: 100%;
+}
+
+.form__title h1 {
+  color: var(--cor-principal);
+  font-size: 1.6rem;
+}
+
+.form__title p {
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
+
+.form__group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__input {
+  padding: 7px 4px;
+  background-color: var(--cor-pagina);
+  border: 1px solid #c6c6c6;
+  border-radius: 4px;
+}
+
+.password-input {
+  margin-top: 20px;
+}
+
+.form__options {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.form__link-password {
+    text-decoration: none;
+    color: var(--cor-cinza-escuro);
 }
